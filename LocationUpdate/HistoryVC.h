@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HistoryVC.h
 //  LocationUpdate
 //
 //  Created by WOS_MacMini_1 on 26/04/18.
@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-{
-    
-    __weak IBOutlet UILabel *lblLocation;
-    
-}
-@end
+@interface HistoryVC : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *tblHistory;
+
+- (IBAction)btnBackAction;
+
+@end

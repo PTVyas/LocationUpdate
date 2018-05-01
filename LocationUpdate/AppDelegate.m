@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import <GooglePlaces/GooglePlaces.h>
+@import GoogleMaps;
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    /*
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *strUD_DataKey = @"data".uppercaseString;
+    [userDefaults removeObjectForKey:strUD_DataKey];
+    */
+    
+    
+    //Google SDK Key = AIzaSyDpvczA-rPc6RwYoHiClRGb3JpZFhV37O4
+    
+    [GMSServices provideAPIKey:@"AIzaSyDpvczA-rPc6RwYoHiClRGb3JpZFhV37O4"];
+    [GMSPlacesClient provideAPIKey:@"AIzaSyDpvczA-rPc6RwYoHiClRGb3JpZFhV37O4"];
+    
     return YES;
 }
 
