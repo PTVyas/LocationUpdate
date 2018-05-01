@@ -28,7 +28,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //---------> Hi Hello
     [self manage_Map];
     
     if (nil == locationManager)
@@ -211,6 +210,4 @@
     //Set Camera Position
     [self manage_SetPinPosition_Lat:latitudeValue Long:longtitudeValue];
 }
-
-//---------> Hi Hello last
 @end

@@ -20,10 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //---------> Hi Hello last
-    
     arrData = [[NSMutableArray alloc] init];
-    //---------> Hi Hello last
     
     [self getLocationData];
     [self manage_ReloadData];
