@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		824A344E8D7F9EBF91B15A9A /* libPods-LocationUpdate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29E51777938267A9B6FDB9C /* libPods-LocationUpdate.a */; };
+		9F2E3EA220983AF200EB35C2 /* DemoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E3EA120983AF200EB35C2 /* DemoClass.m */; };
 		9F5A337F2091CD9E00772808 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A337E2091CD9E00772808 /* AppDelegate.m */; };
 		9F5A33822091CD9E00772808 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A33812091CD9E00772808 /* ViewController.m */; };
 		9F5A33852091CD9E00772808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5A33832091CD9E00772808 /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		2828E97C39DAD51E839881A7 /* Pods-LocationUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationUpdate/Pods-LocationUpdate.release.xcconfig"; sourceTree = "<group>"; };
 		5F44706C774252A087CC3061 /* Pods-LocationUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationUpdate/Pods-LocationUpdate.debug.xcconfig"; sourceTree = "<group>"; };
+		9F2E3EA020983AF200EB35C2 /* DemoClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoClass.h; sourceTree = "<group>"; };
+		9F2E3EA120983AF200EB35C2 /* DemoClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoClass.m; sourceTree = "<group>"; };
 		9F5A337A2091CD9E00772808 /* LocationUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5A337D2091CD9E00772808 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F5A337E2091CD9E00772808 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +55,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F2E3EA320983AFA00EB35C2 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A337D2091CD9E00772808 /* AppDelegate.h */,
+				9F5A337E2091CD9E00772808 /* AppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		9F2E3EA420983B0800EB35C2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A33802091CD9E00772808 /* ViewController.h */,
+				9F5A33812091CD9E00772808 /* ViewController.m */,
+				9F5A339C2091EC9B00772808 /* HistoryVC.h */,
+				9F5A339D2091EC9B00772808 /* HistoryVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9F2E3EA520983B1900EB35C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A33832091CD9E00772808 /* Main.storyboard */,
+				9F5A338B2091CD9E00772808 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9F5A33712091CD9E00772808 = {
 			isa = PBXGroup;
 			children = (
@@ -73,15 +105,12 @@
 		9F5A337C2091CD9E00772808 /* LocationUpdate */ = {
 			isa = PBXGroup;
 			children = (
-				9F5A337D2091CD9E00772808 /* AppDelegate.h */,
-				9F5A337E2091CD9E00772808 /* AppDelegate.m */,
-				9F5A33802091CD9E00772808 /* ViewController.h */,
-				9F5A33812091CD9E00772808 /* ViewController.m */,
-				9F5A339C2091EC9B00772808 /* HistoryVC.h */,
-				9F5A339D2091EC9B00772808 /* HistoryVC.m */,
-				9F5A33832091CD9E00772808 /* Main.storyboard */,
+				9F2E3EA520983B1900EB35C2 /* View */,
+				9F2E3EA320983AFA00EB35C2 /* App Delegate */,
+				9F2E3EA420983B0800EB35C2 /* ViewController */,
+				9F2E3EA020983AF200EB35C2 /* DemoClass.h */,
+				9F2E3EA120983AF200EB35C2 /* DemoClass.m */,
 				9F5A33892091CD9E00772808 /* Assets.xcassets */,
-				9F5A338B2091CD9E00772808 /* LaunchScreen.storyboard */,
 				9F5A338E2091CD9E00772808 /* Info.plist */,
 				9F5A338F2091CD9E00772808 /* main.m */,
 				9F5A33862091CD9E00772808 /* LocationUpdate.xcdatamodeld */,
@@ -224,6 +253,7 @@
 				9F5A33822091CD9E00772808 /* ViewController.m in Sources */,
 				9F5A337F2091CD9E00772808 /* AppDelegate.m in Sources */,
 				9F5A339E2091EC9B00772808 /* HistoryVC.m in Sources */,
+				9F2E3EA220983AF200EB35C2 /* DemoClass.m in Sources */,
 				9F5A33902091CD9E00772808 /* main.m in Sources */,
 				9F5A33882091CD9E00772808 /* LocationUpdate.xcdatamodeld in Sources */,
 			);
